@@ -1,5 +1,5 @@
 #main {
-	width: 430px;
+	width: 440px;
 	padding: 10px;
 	position: absolute;
 	top: 25%;
@@ -22,13 +22,22 @@
 		left: 50px;
 	}
 	p {
-		color: $white;
+		color: $dark-grey;
 		font-family: $Roboto;
 		font-size: $font-sm;
 		line-height: 18px;
 		letter-spacing: 1px;
 		margin-top: 20px;
-		text-align: center;
+		text-align: left;
+		a {
+			color: $white;
+			font-weight: bold;
+			transition: $medium;
+			&:hover {
+				border-bottom: 1px solid $white;
+				cursor: pointer;
+			}
+		}
 	}
 	.todos {
 		list-style-type: none;
