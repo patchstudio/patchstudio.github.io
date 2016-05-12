@@ -21,6 +21,15 @@
 		top: -15px;
 		left: 50px;
 	}
+	p {
+		color: $white;
+		font-family: $Roboto;
+		font-size: $font-sm;
+		line-height: 18px;
+		letter-spacing: 1px;
+		margin-top: 20px;
+		text-align: center;
+	}
 	.todos {
 		list-style-type: none;
 		color: $white;
