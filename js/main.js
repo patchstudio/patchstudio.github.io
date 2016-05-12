@@ -14,6 +14,10 @@ $( "#launcher" ).click(function() {
       LaunchHydt();
     });
 
+    $( "#dev" ).click(function() {
+      LaunchDev();
+    });
+
     $( ".closeme" ).click(function() {
       CloseWindow();
     });
@@ -30,10 +34,15 @@ $( "#launcher" ).click(function() {
         $("#hydtp").toggleClass("hidden");
     }
 
+    function LaunchDev(){
+        $("#devp").toggleClass("hidden");
+    }
+
     function CloseWindow(){
         $("#aboutp").addClass("hidden");
         $("#joinp").addClass("hidden");
         $("#hydtp").addClass("hidden");
+        $("#devp").addClass("hidden");
     }
 
     function RandomInt(min, max){

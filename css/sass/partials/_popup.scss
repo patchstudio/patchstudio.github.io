@@ -1,4 +1,4 @@
-#aboutp, #joinp, #hydtp {
+#aboutp, #joinp, #hydtp, #devp {
 	z-index: 10000;
 	width: 100%;
 	height: 100%;
@@ -63,6 +63,10 @@
 
 #hydtp {
 	background: $blue;
+}
+
+#devp {
+	background: $red;
 }
 
 .hidden {
