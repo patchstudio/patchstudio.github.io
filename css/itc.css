@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3217476, 2016-05-11T23:56:40-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ITCAvantGardeW04-Bold by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/avant-garde-medium-bold/
+ * Copyright: Copyright &#x00A9; 2012 International Typeface Corporation. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of International Typeface Corporation.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3217476
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/311844");
+
+  
+@font-face {font-family: 'ITCAvantGardeW04-Bold';src: url('../fonts/311844_0_0.eot');src: url('../fonts/311844_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/311844_0_0.woff2') format('woff2'),url('../fonts/311844_0_0.woff') format('woff'),url('../fonts/311844_0_0.ttf') format('truetype');}
+ 

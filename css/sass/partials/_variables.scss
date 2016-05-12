@@ -1,49 +1,36 @@
 // COLOR
 
 $black: #000000;
-$purple: #900084;
-$purple-light: #a6359b;
-$pink: #ea196f;
-$orange: #FFB300;
-$yellow: #f9eb41;
+$dark-grey: #333333;
 $white: #ffffff;
-$light-grey: #f8f8f8;
-$dark-grey: #ebebeb;
-
-// GRADIENTS
-$grad-1: #ea196f;
-$grad-2: #ec3664;
-$grad-3: #ef585a;
-$grad-4: #f17d51;
-$grad-5: #f4a149;
-$grad-6: #f7c644;
-$grad-7: #f9eb41;
-
-$yellow-1: #f9eb41;
-$yellow-2: #f9ef78;
-$yellow-3: #f9f19c;
-$yellow-4: #f8f5ca;
-$yellow-5: #fcfadc;
+$purple: #6966dd;
+$red: #ff5f7a;
+$yg: #c6ba28;
+$green: #15cc70;
+$blue: #10c7e0;
 
 
 // TYPOGRAPHY
 
 $default-text-color: $black !default;
 
-$ITCBold: 'ITC Avant Garde Gothic Std Bold';
-$ITCBook: 'ITC Avant Garde Gothic Std Book';
-$ITCDemi: 'ITC Avant Garde Gothic Std DemiBold';
-$ITCMedium: 'ITC Avant Garde Gothic Std Medium';
+$ITC:'ITCAvantGardeW04-Bold';
 
-$Open: 'Open Sans';
+$Source: 'Source Sans Pro';
+
+$Roboto: 'Roboto';
+
+
+
+// TYPE SIZES
+
+$font-sm: 12px;
+$font-md: 14px;
+
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $ITCBold;
+	font-family: $ITC;
 	text-transform: uppercase;
-}
-
-p {
-	font-family: $Open;
 }
 
 // TRANSITIONS
