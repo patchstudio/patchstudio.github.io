@@ -148,7 +148,8 @@ button:active, button:focus {
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  opacity: 0.95; }
   #aboutp h1, #joinp h1, #hydtp h1, #devp h1 {
     color: #ffffff;
     width: 440px;
