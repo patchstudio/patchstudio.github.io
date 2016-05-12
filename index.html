@@ -13,10 +13,15 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
     <link rel="stylesheet" href="css/itc.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
     <script src="http://jonobr1.github.com/two.js/third-party/two.js"></script>
 
@@ -24,7 +29,7 @@
   <body>
 
     <div id="bg" class="state1"></div>
-    <div id="aboutp" class="hidden">
+<!--     <div id="aboutp" class="hidden">
         <h1>About</h1>
         <p>Patch Studio was formed in 2016 by a small group of friends who like to do fun stuff. Currently, we're working on a game for PC and Playstation called <a href="http://kikogame.net">Kiko</a> that explores how children view death through the lens of a five year-old girl.<br><br>
 
@@ -35,39 +40,60 @@
         <p>We're looking for team members! If you have an interest in joining Patch and working on our current project, <a href="http://kikogame.net">Kiko</a>, or would like to get to know more about how we operate as a company, feel free to email us with what you're interested in and your portfolio link at <a href="mailto:hello@patchstudio.com">hello@patchstudio.com</a>.<br><br>
 
         <button class="closeme">Close</button></p>
-    </div>
+    </div> -->
     <div id="hydtp" class="hidden">
         <h1>How'd you do that?</h1>
-        <p>If you have any questions as to how we did something featured on Patch&mdash;whether it be a game technique, something on our website, or our stuff floating elsewhere on the web&mdash;drop us a line at <a href="mailto:hello@patchstudio.com">hello@patchstudio.com</a> and we'll lend a hand.<br><br>
+        <p>If you have any questions as to how we did something featured on Patch&mdash;whether it be a game technique, something on our website, or our stuff floating elsewhere on the web&mdash;drop us a line at <a href="mailto:hello@patchstudio.com">hello@patchstudio.com</a> and we'll lend a hand. You're also more than welcome to catch our founder, Rizzo Daly, on twitter <a href="https://twitter.com/rizzodaly">@rizzodaly</a> !<br><br>
 
         <button class="closeme">Close</button></p>
     </div>
-    <div id="devp" class="hidden">
+<!--     <div id="devp" class="hidden">
         <h1>Come back soon!</h1>
         <p>Our dev log thus far, complete with tutorials and write-ups on design and theory, launches 05/12/16 at Artwalk. Check back later!<br><br>
 
         <button class="closeme">Close</button></p>
-    </div>
+    </div> -->
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id="topnav">
-        <a class="cw" href="http://kikogame.net">Current Project: Kiko</a>
+        <a class="cw" href="index.html#welcome">Patch</a>
         <ul class="topnav-right">
-            <li><a id="about" href="#">About</a></li>
+            <li><a href="index.html#us">About</a></li>
             <li>/</li>
-            <li><a id="dev" href="#">Dev log</a></li>
+            <li><a href="http://patchstudio.tumblr.com/">Dev log</a></li>
             <li>/</li>
-            <li><a id="join" href="#">Join Patch</a></li>
+            <li><a href="#joinpatch">Join Patch</a></li>
         </ul>
     </div>
 
-    <div id="main">
-        <div class="logomark"></div>
-        <h1>Patch Studio</h1>
-        <p>We're Patch, a small company devoted to making things more fun and breaking things along the way. We're currently working on <a href="http://kikogame.net">Kiko</a>, a third-person action/adventure game for PC and Playstation that explores how children view death through the lens of a five year-old girl.</p>
+    <div id="scrollcontent">
+        <div id="main" class="section">
+            <div class="logomark"></div>
+            <h1>Patch Studio</h1>
+            <p>We're Patch, a small company devoted to making things more fun and breaking things along the way. We're currently working on <a href="http://kikogame.net">Kiko</a>, a third-person action/adventure game for PC and Playstation that explores how children view death through the lens of a five year-old girl.</p>
 
-        <p>Until then, you can check out our dev log, or simply <button id="launcher">have some fun</button>
+            <p>Check out our <a href="http://patchstudio.tumblr.com/">dev log</a>, or <button id="launcher">have a bit of fun</button> .
+        </div>
+        <div id="aboutus" class="section">
+            <h1>Meet Patch.</h1>
+            <p>Patch Studio was formed in 2016 by a small group of friends who like to do fun stuff. We're currently based in Baltimore, MD, but our members are from across the country. Our current focus is on video games, but we love interactive media of all sorts&mdash;from websites and apps to experimental film.</p>
+        </div>
+        <div id="work" class="section">
+            <h1>Meet Kiko.</h1>
+            <p>Kiko is a third-person action-adventure game for PC and Playstation that examines how children experience grief through the lens of a five year-old girl and her shifting views of what it means to die.<br><br>
+
+The story takes place on a small island in French Polynesia and follows the life of Kiko, the lively young daughter of a fisherman, on a quest to retrieve her parents back from death. Each stage of the game is marked by a prominent death that both helps shape Kiko’s understanding of the afterlife and affects the visual narrative and game mechanics present in the world; as Kiko gains more insight as to what, where, and how death is, the colors, textures, landscape, and architecture of the game adjust to fit her new narrative. There are five major shifts in her comprehension, each reflecting one of the stages of grief: the passing of her parents at sea (denial), the death of the passionate artisan Apu (anger), the noble death of the warrior Tita (bargaining), the untimely death of her friend Pika (depression), and the death of her last living relative (acceptance).<br><br>
+
+Throughout the game, players must navigate the ever-changing world in order to find and bring back Kiko’s parents from death. Gameplay ranges from spatial puzzles to attending to spirits around the island—either by aiding the good through tasks of varying difficulty or through combatting and vanquishing the evil. Players are also aided by the use of the cloak, a shield-like entity first given to Kiko at her parents’ funeral, and the soul, the main weapon / magic type of the game. Like the environment, the soul undergoes changes as Kiko’s understanding of it grows; what starts out as a basic wooden sword later becomes a source of energy and magic.</p>
+
+        </div>
+        <div id="jobs" class="section">
+            <h1>Join Patch.</h1>
+            <div class="patch-logos"></div>
+            <p>Email us at <a href="mailto:hello@patchstudio.com">hello@patchstudio.com</a> to ask about opportunities.</p>
+        </div>
+
     </div>
 
     <div id="bottomnav">
@@ -76,14 +102,12 @@
         <p id="hydt" class="right"><i class="fa fa-question-circle"></i> How'd you do that?</p>
     </div>
 
-    
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 
     <script src="js/gen.js"></script>
 
     <script src="js/main.js"></script>
+
+     <script src="js/scroll.js"></script>
 
 
     <!--

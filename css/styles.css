@@ -57,33 +57,40 @@ button:active, button:focus {
   background: #10c7e0; }
 
 #topnav {
-  list-style-type: none; }
-  #topnav a, #topnav a:visited, #topnav a:active, #topnav a:hover {
-    color: #ffffff;
-    letter-spacing: 1px; }
+  list-style-type: none;
+  z-index: 9000; }
   #topnav .cw {
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 35px;
     text-decoration: none;
-    padding: 10px 14px 5px 14px;
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    transition: 0.25s all ease-in-out; }
+    transition: 0.25s all ease-in-out;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff; }
   #topnav .cw:hover {
     background: rgba(255, 255, 255, 0.1); }
   #topnav .topnav-right {
     position: fixed;
+    z-index: 90000;
     top: 30px;
     right: 35px; }
+    #topnav .topnav-right li {
+      margin-left: 20px;
+      display: inline-block; }
+      #topnav .topnav-right li a, #topnav .topnav-right li a:visited, #topnav .topnav-right li a:active, #topnav .topnav-right li a:hover {
+        color: #ffffff;
+        letter-spacing: 1px;
+        display: block; }
+      #topnav .topnav-right li a:hover {
+        pointer: cursor;
+        background: rgba(255, 255, 255, 0.1); }
+    #topnav .topnav-right li:hover {
+      background: rgba(255, 255, 255, 0.1); }
   #topnav li, #topnav .cw {
     font-family: "ITCAvantGardeW04-Bold";
     font-size: 18px;
     color: #ffffff;
     text-transform: uppercase; }
-  #topnav li {
-    margin-left: 20px;
-    display: inline-block; }
 
 #bottomnav {
   color: #ffffff;
@@ -209,8 +216,7 @@ button:active, button:focus {
 #main {
   width: 440px;
   padding: 10px;
-  position: absolute;
-  top: 25%;
+  position: relative;
   left: 50%;
   margin-left: -215px; }
   #main .logomark {
@@ -242,21 +248,44 @@ button:active, button:focus {
       #main p a:hover {
         border-bottom: 1px solid #ffffff;
         cursor: pointer; }
-  #main .todos {
-    list-style-type: none;
+
+#aboutus, #work, #jobs {
+  width: 1080px;
+  padding: 10px;
+  position: relative;
+  left: 50%;
+  margin-left: -540px; }
+  #aboutus h1, #work h1, #jobs h1 {
+    text-align: center;
     color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  #aboutus p, #work p, #jobs p {
+    text-align: center;
+    font-size: 14px;
+    width: 550px;
+    margin: 0 auto;
+    line-height: 22px;
+    color: #000000;
     font-family: "Roboto";
-    font-size: 12px;
-    letter-spacing: 1px; }
-    #main .todos li {
-      display: inline-block; }
-    #main .todos li:nth-of-type(2) {
-      text-align: right;
-      position: relative;
-      right: 0; }
-    #main .todos b {
-      font-weight: 700;
-      text-transform: uppercase; }
+    margin-top: 20px; }
+    #aboutus p a, #work p a, #jobs p a {
+      color: #ffffff;
+      font-weight: bold;
+      transition: 0.25s all ease-in-out; }
+      #aboutus p a:hover, #work p a:hover, #jobs p a:hover {
+        border-bottom: 1px solid #ffffff;
+        cursor: pointer; }
+
+#jobs .patch-logos {
+  background: url("../images/patch_logos.png");
+  width: 1080px;
+  height: 467px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#work p {
+  text-align: left; }
 
 #post {
   margin-left: 350px;

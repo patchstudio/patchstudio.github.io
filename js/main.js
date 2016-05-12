@@ -2,20 +2,8 @@ $( "#launcher" ).click(function() {
       RandomInt(1, 5);
     });
 
-    $( "#about" ).click(function() {
-      LaunchAbout();
-    });
-
-    $( "#join" ).click(function() {
-      LaunchJoin();
-    });
-
     $( "#hydt" ).click(function() {
       LaunchHydt();
-    });
-
-    $( "#dev" ).click(function() {
-      LaunchDev();
     });
 
     $( ".closeme" ).click(function() {

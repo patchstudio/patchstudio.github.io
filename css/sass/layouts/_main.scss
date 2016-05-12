@@ -1,8 +1,7 @@
 #main {
 	width: 440px;
 	padding: 10px;
-	position: absolute;
-	top: 25%;
+	position: relative;
 	left: 50%;
 	margin-left: -215px;
 	.logomark {
@@ -39,24 +38,54 @@
 			}
 		}
 	}
-	.todos {
-		list-style-type: none;
+}
+
+#aboutus, #work, #jobs {
+	width: 1080px;
+	padding: 10px;
+	position: relative;
+	left: 50%;
+	margin-left: -540px;
+	h1 {
+		text-align: center;
 		color: $white;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+	}
+	p {
+		text-align: center;
+		font-size: 14px;
+		width: 550px;
+		margin: 0 auto;
+		line-height: 22px;
+		color: $black;
 		font-family: $Roboto;
-		font-size: $font-sm;
-		letter-spacing: 1px;
-		li {
-			display: inline-block;
+		margin-top: 20px;
+		//margin-bottom: 40px;
+		a {
+			color: $white;
+			font-weight: bold;
+			transition: $medium;
+			&:hover {
+				border-bottom: 1px solid $white;
+				cursor: pointer;
+			}
 		}
-		li:nth-of-type(2) {
-			text-align: right;
-			position: relative;
-			right: 0;
-		}
-		b {
-			font-weight: 700;
-			text-transform: uppercase;
-			//float: left;
-		}
+	}
+}
+
+#jobs {
+	.patch-logos {
+		background: url("../images/patch_logos.png");
+		width: 1080px;
+		height: 467px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+#work {
+	p {
+		text-align: left;
 	}
 }
